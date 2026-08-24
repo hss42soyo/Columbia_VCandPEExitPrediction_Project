@@ -1,0 +1,52 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.venv": true,
+    "**/__pycache__": true,
+    "**/.ipynb_checkpoints": true,
+    "data": true,
+    "outputs": true,
+    "project/outputs": true,
+    "catboost_info": true,
+    "provenance": true
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/.venv": true,
+    "**/__pycache__": true,
+    "**/.ipynb_checkpoints": true,
+    "data/**": true,
+    "outputs/**": true,
+    "project/outputs/**": true,
+    "catboost_info/**": true,
+    "provenance/**": true,
+    "**/*.parquet": true,
+    "**/*.csv": true,
+    "**/*.zip": true,
+    "**/*.pkl": true
+  },
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/.venv/**": true,
+    "**/__pycache__/**": true,
+    "**/.ipynb_checkpoints/**": true,
+    "data/**": true,
+    "outputs/**": true,
+    "project/outputs/**": true,
+    "catboost_info/**": true,
+    "provenance/**": true,
+    "**/*.parquet": true,
+    "**/*.csv": true,
+    "**/*.zip": true,
+    "**/*.pkl": true
+  },
+  "python.analysis.exclude": [
+    "**/.venv",
+    "data",
+    "outputs",
+    "project/outputs",
+    "catboost_info",
+    "provenance"
+  ],
+  "jupyter.askForKernelRestart": false
+}

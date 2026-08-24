@@ -1,0 +1,2 @@
+train_companies,test_companies,overlap_companies,share_of_test_companies_seen_in_train
+274139,281488,173772,0.6173335985903484

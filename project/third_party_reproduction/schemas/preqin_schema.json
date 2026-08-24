@@ -1,0 +1,3741 @@
+{
+  "component": "preqin",
+  "generated_at_utc": "2026-05-21T16:49:30+00:00",
+  "source_root": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4",
+  "tables": [
+    {
+      "component": "preqin",
+      "table_name": "crunchbase_company_identity",
+      "source_relpath": "canonical_crunchbase\\crunchbase_company_identity.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\canonical_crunchbase\\crunchbase_company_identity.parquet",
+      "file_bytes": 512339082,
+      "row_count": 4387014,
+      "column_count": 15,
+      "columns": [
+        {
+          "name": "company_uuid",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "organization_permalink",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "organization_name_live",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "website_url",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "founded_on",
+          "type": "timestamp[us]",
+          "nullable": true
+        },
+        {
+          "name": "operating_status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "num_founders",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "hq_country",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hq_region",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hq_city",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "domain_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "name_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "country_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "state_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "name_prefix4",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [],
+      "candidate_foreign_keys": [
+        "company_uuid"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_benchmarks",
+      "source_relpath": "canonical_preqin\\preqin_benchmarks.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\canonical_preqin\\preqin_benchmarks.parquet",
+      "file_bytes": 16381831,
+      "row_count": 156444,
+      "column_count": 83,
+      "columns": [
+        {
+          "name": "benchmark_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "benchmark_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fund_type",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "benchmark_region_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "constituent_size__usd_bn_",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "strategy",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "constituent_as_at",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "benchmark_vintage",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "constituent_no_of_funds",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "called_____mean",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "called_____median",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "called_____top_quartile_boundary",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "called_____bottom_quartile_bound",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "called_____min",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "called_____max",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "called_____weighted",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "called_____standard_deviation",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "dpi_____mean",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "dpi_____median",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "dpi_____top_quartile_boundary__q",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "dpi_____bottom_quartile_boundary",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "dpi_____min",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "dpi_____max",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "dpi_____weighted",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "dpi_____standard_deviation",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "rvpi_____mean",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "rvpi_____median",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "rvpi_____top_quartile_boundary__",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "rvpi_____bottom_quartile_boundar",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "rvpi_____min",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "rvpi_____max",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "rvpi_____weighted",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "rvpi_____standard_deviation",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_multiple_____mean",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_multiple_____median",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_multiple_____top_quartile_bo",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_multiple_____bottom_quartile",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_multiple_____min",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_multiple_____max",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_multiple_____weighted",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_multiple_____standard_deviat",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_irr_____mean",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_irr_____median",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_irr_____top_quartile_boundar",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_irr_____bottom_quartile_boun",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_irr_____min",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_irr_____max",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_irr_____weighted",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "net_irr_____standard_deviation",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "pooled_irr_no_funds",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "pooled_irr",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "s_p_500_ln_pme____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "s_p_500_ks_pme",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "s_p_500_pme_____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "russell_2000_ln_pme____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "russell_2000_ks_pme",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "russell_2000_pme_____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "russell_3000_ln_pme____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "russell_3000_ks_pme",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "russell_3000_pme_____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_emerging_markets_ln_pme____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_emerging_markets_ks_pme",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_emerging_markets_pme_____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_europe_standard_ln_pme____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_europe_standard_ks_pme",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_europe_standard_pme_____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_us_reit_ln_pme____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_us_reit_ks_pme",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_us_reit_pme_____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_world_ln_pme____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_world_ks_pme",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_world_pme_____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "s_p_500___direct_alpha____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "russell_2000___direct_alpha____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "russell_3000___direct_alpha____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_us_reit___direct_alpha____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_europe_standard___direct_al",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_emerging_markets___direct_a",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msci_world___direct_alpha____",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "composite_benchmark_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_file",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_sha256",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_loaded_at_utc",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [],
+      "candidate_foreign_keys": [
+        "benchmark_id",
+        "composite_benchmark_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_buyout_deals",
+      "source_relpath": "canonical_preqin\\preqin_buyout_deals.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\canonical_preqin\\preqin_buyout_deals.parquet",
+      "file_bytes": 38859277,
+      "row_count": 130983,
+      "column_count": 44,
+      "columns": [
+        {
+          "name": "portfolio_company_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "deal_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "buyout_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "investment_type",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "deal_size",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "deal_size_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "deal_size_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "deal_size_equity",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "deal_status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "company_revenue",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "entry_revenue_multiple",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "ebitda",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "entry_ebitda_multiple",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "investment_status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "portfolio_company_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "portfolio_company_website",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "portfolio_company_state",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "portfolio_company_country",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "portfolio_company_region",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "deal_description",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "pressreleaseurl",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "dealsizeequity_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "dealsizeequity_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "debtsize",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "debtsize_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "debtsize_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "managementinvests",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "individualinvestors",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "otherunspecifiedinvestors",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "investmentstake",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "enterprisevalue",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "acquired_share_pcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "firm_about",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "year_established",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "firm_othernames",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "industry_classification",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "primary_industry",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "sub_industries",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "industry_verticals",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "industry_subverticals",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "_source_file",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_sha256",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_loaded_at_utc",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [],
+      "candidate_foreign_keys": [
+        "portfolio_company_id",
+        "buyout_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_cash_flow",
+      "source_relpath": "canonical_preqin\\preqin_cash_flow.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\canonical_preqin\\preqin_cash_flow.parquet",
+      "file_bytes": 5420560,
+      "row_count": 295296,
+      "column_count": 11,
+      "columns": [
+        {
+          "name": "fund_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "transaction_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "firm_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "transaction_type",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "transaction_amount",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "cumulative_contribution",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "cumulative_distribution",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "net_cashflow",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "_source_file",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_sha256",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_loaded_at_utc",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [
+        "fund_id"
+      ],
+      "candidate_foreign_keys": [
+        "fund_id",
+        "firm_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_fund_details",
+      "source_relpath": "canonical_preqin\\preqin_fund_details.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\canonical_preqin\\preqin_fund_details.parquet",
+      "file_bytes": 4626733,
+      "row_count": 72937,
+      "column_count": 34,
+      "columns": [
+        {
+          "name": "firm_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fund_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fund_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "vintage",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "fund_type",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fundraising_launch_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "local_currency",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "target_size_lc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "target_size_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "target_size_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "final_size_lc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "final_size_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "final_size_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "latest_interim_close_size_lc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "latest_interim_close_size_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "latest_interim_close_size_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "latest_interim_close_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "fund_status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "final_close_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "fund_focus",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fund_number_overall",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "fund_number_series",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "fund_structure",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "geographic_scope",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "region",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "industry",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "placement_agents",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "law_firm",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "administrator",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "auditor",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_file",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_sha256",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_loaded_at_utc",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [
+        "fund_id"
+      ],
+      "candidate_foreign_keys": [
+        "firm_id",
+        "fund_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_fund_performance",
+      "source_relpath": "canonical_preqin\\preqin_fund_performance.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\canonical_preqin\\preqin_fund_performance.parquet",
+      "file_bytes": 2666922,
+      "row_count": 358891,
+      "column_count": 12,
+      "columns": [
+        {
+          "name": "fund_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "date_reported",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "vintage",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "called_pcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "distr_dpi_pcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "value_rvpi_pcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "multiple",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "net_irr_pcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "benchmark_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_file",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_sha256",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_loaded_at_utc",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [
+        "fund_id"
+      ],
+      "candidate_foreign_keys": [
+        "fund_id",
+        "benchmark_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_fund_terms",
+      "source_relpath": "canonical_preqin\\preqin_fund_terms.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\canonical_preqin\\preqin_fund_terms.parquet",
+      "file_bytes": 118713,
+      "row_count": 11977,
+      "column_count": 23,
+      "columns": [
+        {
+          "name": "fund_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "numberinvestorsmin",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "numberinvestorsmax",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "returninginvestorspcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "fundtermscurrency",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "carriedinterestpercent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "carriedinterestbasis",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "gpcatchupratepercent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "hurdleratepercent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "keymanclause",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "keymanclauselevel",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "keymanclausedescription",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "lpmajorityrequired_precent",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fundformationcost_mn",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "annualmgmtfeeduringperiodpcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "annualmgmtfeeduringperiodpcentmo",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "frequencymgmtfeecollected",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "frequencymgmtfeecollectedmodifie",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "investmentperiodyears",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "investmentperiodyearsmodifier",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "_source_file",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_sha256",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_loaded_at_utc",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [
+        "fund_id"
+      ],
+      "candidate_foreign_keys": [
+        "fund_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_lp_investor_details",
+      "source_relpath": "canonical_preqin\\preqin_lp_investor_details.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\canonical_preqin\\preqin_lp_investor_details.parquet",
+      "file_bytes": 1712739,
+      "row_count": 17431,
+      "column_count": 48,
+      "columns": [
+        {
+          "name": "firm_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "currently_investing_pe",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_type",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "web_address",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_address_1",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_address_2",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "firm_city",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_state",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_zip_code",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_country",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "lp_currency_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "funds_under_management_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "funds_under_management_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "funds_under_management_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "current_pe_allocation_pcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "current_pe_allocation_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "current_pe_allocation_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "current_pe_allocation_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "target_pe_allocation_pcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "target_pe_allocation_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "target_pe_allocation_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "target_pe_allocation_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "separate_acct_committed_pcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "separate_acct_committed_lpc",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "separate_acct_committed_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "separate_acct_committed_eur",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "typically_invest_min_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "typically_invest_max_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "typically_invest_min_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "typically_invest_max_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "typically_invest_min_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "typically_invest_max_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "coinvest_with_gp",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "first_close_investor",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "separate_accounts",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "next_12_months_no_investments_mi",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "next_12_months_no_investments_ma",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "next_12_months_amount_min_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "next_12_months_amount_max_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "next12monthsallocationmin_pe_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "next12monthsallocationmax_pe_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "next12monthsallocationmin_pe_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "next12monthsallocationmax_pe_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "next_12_months_quarter",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "_source_file",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_sha256",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_loaded_at_utc",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [],
+      "candidate_foreign_keys": [
+        "firm_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_manager_details",
+      "source_relpath": "canonical_preqin\\preqin_manager_details.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\canonical_preqin\\preqin_manager_details.parquet",
+      "file_bytes": 7103394,
+      "row_count": 32468,
+      "column_count": 38,
+      "columns": [
+        {
+          "name": "firm_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firmname",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firmtype",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "lastupdated",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "status",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "sourceofcapital",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "mainfirmstrategy",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firmaddress1",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firmaddress2",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "firmcity",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firmstate",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firmzipcode",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firmcountry",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "about",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "established",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "staffcounttotal",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "staffcountmanagement",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "staffcountinvestment",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "firmtrait",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "profilecurrency",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "totalfundsraised10yearsmn",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "investorcoinvestmentrights",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "totalnumberofportfoliocompanies",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "currentnumberofportfoliocompanie",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "averagetransactionsperannummin",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "averagetransactionsperannummax",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "welcomebusinessplan",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "businessplanlocation",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "geofocus",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "countryfocus",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "industryfocus",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "isminorityowned",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "iswomenowned",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "listed_firm",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firmethos",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "_source_file",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_sha256",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_loaded_at_utc",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [],
+      "candidate_foreign_keys": [
+        "firm_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_portfolio_company_dim",
+      "source_relpath": "canonical_preqin\\preqin_portfolio_company_dim.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\canonical_preqin\\preqin_portfolio_company_dim.parquet",
+      "file_bytes": 19571138,
+      "row_count": 256052,
+      "column_count": 23,
+      "columns": [
+        {
+          "name": "preqin_company_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_portfolio_company_ids",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "source_tables",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "deal_kinds",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_website",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_state",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_country",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_region",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "domain_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "name_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "country_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "state_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "first_preqin_deal_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "last_preqin_deal_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "preqin_deal_count",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "preqin_vc_deal_count",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "preqin_buyout_deal_count",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "preqin_total_deal_size_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "preqin_max_deal_size_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "primary_industries",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "industry_verticals",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "domain_is_generic",
+          "type": "bool",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [],
+      "candidate_foreign_keys": []
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_standardized_portfolio_deals",
+      "source_relpath": "canonical_preqin\\preqin_standardized_portfolio_deals.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\canonical_preqin\\preqin_standardized_portfolio_deals.parquet",
+      "file_bytes": 101338686,
+      "row_count": 501763,
+      "column_count": 28,
+      "columns": [
+        {
+          "name": "source_table",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_portfolio_company_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_deal_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "deal_kind",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "deal_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "deal_stage",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "deal_status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "investment_status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "company_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "company_website",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "company_state",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "company_country",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "company_region",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "deal_size_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "total_known_funding_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "firm_about",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_year_established",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "firm_othernames",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "industry_classification",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "primary_industry",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "sub_industries",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "industry_verticals",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "industry_subverticals",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "domain_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "name_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "country_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "state_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_key",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [],
+      "candidate_foreign_keys": [
+        "preqin_portfolio_company_id",
+        "preqin_deal_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_vc_deals",
+      "source_relpath": "canonical_preqin\\preqin_vc_deals.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\canonical_preqin\\preqin_vc_deals.parquet",
+      "file_bytes": 64111446,
+      "row_count": 370780,
+      "column_count": 28,
+      "columns": [
+        {
+          "name": "portfolio_company_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "deal_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "ventureid",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "stage",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "deal_financing_size",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "deal_financing_size_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "deal_financing_size_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "deal_status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "investment_status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "portfolio_company_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "portfolio_company_website",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "portfolio_company_state",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "portfolio_company_country",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "portfolio_company_region",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "total_known_funding_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "total_known_funding_eur",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "firm_about",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "year_established",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "firm_othernames",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "industry_classification",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "primary_industry",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "sub_industries",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "industry_verticals",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "industry_subverticals",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "_source_file",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_sha256",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_loaded_at_utc",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [],
+      "candidate_foreign_keys": [
+        "portfolio_company_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_cashflow_fund_link",
+      "source_relpath": "linkage\\preqin_cashflow_fund_link.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\linkage\\preqin_cashflow_fund_link.parquet",
+      "file_bytes": 5616436,
+      "row_count": 295296,
+      "column_count": 18,
+      "columns": [
+        {
+          "name": "fund_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "transaction_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "firm_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "transaction_type",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "transaction_amount",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "cumulative_contribution",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "cumulative_distribution",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "net_cashflow",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "_source_file",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_sha256",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_loaded_at_utc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fund_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "vintage",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "fund_type",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "region",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "final_size_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "fund_match_status",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [
+        "fund_id"
+      ],
+      "candidate_foreign_keys": [
+        "fund_id",
+        "firm_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_crunchbase_company_crosswalk",
+      "source_relpath": "linkage\\preqin_crunchbase_company_crosswalk.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\linkage\\preqin_crunchbase_company_crosswalk.parquet",
+      "file_bytes": 32258142,
+      "row_count": 176966,
+      "column_count": 46,
+      "columns": [
+        {
+          "name": "preqin_company_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_portfolio_company_ids",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "source_tables",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_website",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_state",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_country",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_domain_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_name_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_country_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_state_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "first_preqin_deal_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "last_preqin_deal_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "preqin_deal_count",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "preqin_vc_deal_count",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "preqin_buyout_deal_count",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "company_uuid",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_company_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_permalink",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_website_url",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_founded_on",
+          "type": "timestamp[us]",
+          "nullable": true
+        },
+        {
+          "name": "operating_status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hq_country",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hq_region",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hq_city",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_name_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_country_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_state_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "candidate_count",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "match_method",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "match_score",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "second_best_score",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "score_margin",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "date_conflict",
+          "type": "bool",
+          "nullable": true
+        },
+        {
+          "name": "country_conflict",
+          "type": "bool",
+          "nullable": true
+        },
+        {
+          "name": "state_conflict",
+          "type": "bool",
+          "nullable": true
+        },
+        {
+          "name": "candidate_status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "reject_reason",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_domain_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "crosswalk_version",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "created_at_utc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "match_priority",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "match_candidate_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "accepted_match_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "confidence_tier",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "accepted",
+          "type": "bool",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [],
+      "candidate_foreign_keys": [
+        "company_uuid",
+        "match_candidate_id",
+        "accepted_match_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_crunchbase_match_audit",
+      "source_relpath": "linkage\\preqin_crunchbase_match_audit.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\linkage\\preqin_crunchbase_match_audit.parquet",
+      "file_bytes": 14732955,
+      "row_count": 117999,
+      "column_count": 47,
+      "columns": [
+        {
+          "name": "preqin_company_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_portfolio_company_ids",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "source_tables",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_website",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_state",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_country",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_domain_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_name_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_country_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_state_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "first_preqin_deal_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "last_preqin_deal_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "preqin_deal_count",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "preqin_vc_deal_count",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "preqin_buyout_deal_count",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "company_uuid",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_company_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_permalink",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_website_url",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_founded_on",
+          "type": "timestamp[us]",
+          "nullable": true
+        },
+        {
+          "name": "operating_status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hq_country",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hq_region",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hq_city",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_name_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_country_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_state_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "candidate_count",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "match_method",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "match_score",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "second_best_score",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "score_margin",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "date_conflict",
+          "type": "bool",
+          "nullable": true
+        },
+        {
+          "name": "country_conflict",
+          "type": "bool",
+          "nullable": true
+        },
+        {
+          "name": "state_conflict",
+          "type": "bool",
+          "nullable": true
+        },
+        {
+          "name": "candidate_status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "reject_reason",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_domain_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "crosswalk_version",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "created_at_utc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "match_priority",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "match_candidate_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "accepted_match_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "confidence_tier",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "accepted",
+          "type": "bool",
+          "nullable": true
+        },
+        {
+          "name": "accepted_preqin_key_count",
+          "type": "double",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [],
+      "candidate_foreign_keys": [
+        "company_uuid",
+        "match_candidate_id",
+        "accepted_match_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_crunchbase_match_candidates",
+      "source_relpath": "linkage\\preqin_crunchbase_match_candidates.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\linkage\\preqin_crunchbase_match_candidates.parquet",
+      "file_bytes": 44833067,
+      "row_count": 284582,
+      "column_count": 43,
+      "columns": [
+        {
+          "name": "preqin_company_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_portfolio_company_ids",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "source_tables",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_website",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_state",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_company_country",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_domain_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_name_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_country_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preqin_state_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "first_preqin_deal_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "last_preqin_deal_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "preqin_deal_count",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "preqin_vc_deal_count",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "preqin_buyout_deal_count",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "company_uuid",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_company_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_permalink",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_website_url",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_founded_on",
+          "type": "timestamp[us]",
+          "nullable": true
+        },
+        {
+          "name": "operating_status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hq_country",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hq_region",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hq_city",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_name_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_country_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_state_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "candidate_count",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "match_method",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "match_score",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "second_best_score",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "score_margin",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "date_conflict",
+          "type": "bool",
+          "nullable": true
+        },
+        {
+          "name": "country_conflict",
+          "type": "bool",
+          "nullable": true
+        },
+        {
+          "name": "state_conflict",
+          "type": "bool",
+          "nullable": true
+        },
+        {
+          "name": "candidate_status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "reject_reason",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cb_domain_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "crosswalk_version",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "created_at_utc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "match_priority",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "match_candidate_id",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [],
+      "candidate_foreign_keys": [
+        "company_uuid",
+        "match_candidate_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_fund_manager_link",
+      "source_relpath": "linkage\\preqin_fund_manager_link.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\linkage\\preqin_fund_manager_link.parquet",
+      "file_bytes": 5087634,
+      "row_count": 72937,
+      "column_count": 40,
+      "columns": [
+        {
+          "name": "firm_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fund_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fund_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "vintage",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "fund_type",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fundraising_launch_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "local_currency",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "target_size_lc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "target_size_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "target_size_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "final_size_lc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "final_size_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "final_size_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "latest_interim_close_size_lc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "latest_interim_close_size_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "latest_interim_close_size_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "latest_interim_close_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "fund_status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "final_close_date",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "fund_focus",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fund_number_overall",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "fund_number_series",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "fund_structure",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "geographic_scope",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "region",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "industry",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "placement_agents",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "law_firm",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "administrator",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "auditor",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_file",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_sha256",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_loaded_at_utc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firmname",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firmtype",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "status",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "mainfirmstrategy",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firmcountry",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "manager_match_status",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [
+        "fund_id"
+      ],
+      "candidate_foreign_keys": [
+        "firm_id",
+        "fund_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_fund_performance_benchmark_link",
+      "source_relpath": "linkage\\preqin_fund_performance_benchmark_link.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\linkage\\preqin_fund_performance_benchmark_link.parquet",
+      "file_bytes": 2833746,
+      "row_count": 358891,
+      "column_count": 18,
+      "columns": [
+        {
+          "name": "fund_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "date_reported",
+          "type": "timestamp[ns]",
+          "nullable": true
+        },
+        {
+          "name": "vintage",
+          "type": "int64",
+          "nullable": true
+        },
+        {
+          "name": "called_pcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "distr_dpi_pcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "value_rvpi_pcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "multiple",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "net_irr_pcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "benchmark_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_file",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_sha256",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_loaded_at_utc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "benchmark_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fund_type",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "benchmark_region_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "strategy",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "benchmark_vintage",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "benchmark_match_status",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [
+        "fund_id"
+      ],
+      "candidate_foreign_keys": [
+        "fund_id",
+        "benchmark_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_fund_terms_link",
+      "source_relpath": "linkage\\preqin_fund_terms_link.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\linkage\\preqin_fund_terms_link.parquet",
+      "file_bytes": 317256,
+      "row_count": 11977,
+      "column_count": 31,
+      "columns": [
+        {
+          "name": "fund_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "numberinvestorsmin",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "numberinvestorsmax",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "returninginvestorspcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "fundtermscurrency",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "carriedinterestpercent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "carriedinterestbasis",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "gpcatchupratepercent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "hurdleratepercent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "keymanclause",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "keymanclauselevel",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "keymanclausedescription",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "lpmajorityrequired_precent",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fundformationcost_mn",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "annualmgmtfeeduringperiodpcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "annualmgmtfeeduringperiodpcentmo",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "frequencymgmtfeecollected",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "frequencymgmtfeecollectedmodifie",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "investmentperiodyears",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "investmentperiodyearsmodifier",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "_source_file",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_sha256",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_loaded_at_utc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fund_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "vintage",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "fund_type",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "region",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "final_size_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "fund_match_status",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [
+        "fund_id"
+      ],
+      "candidate_foreign_keys": [
+        "fund_id",
+        "firm_id"
+      ]
+    },
+    {
+      "component": "preqin",
+      "table_name": "preqin_lp_investor_dim",
+      "source_relpath": "linkage\\preqin_lp_investor_dim.parquet",
+      "source_path": "D:\\data\\VendorLinkage\\preqin_crunchbase_v1_20260514_run4\\linkage\\preqin_lp_investor_dim.parquet",
+      "file_bytes": 2193480,
+      "row_count": 17431,
+      "column_count": 51,
+      "columns": [
+        {
+          "name": "firm_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "currently_investing_pe",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_type",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "web_address",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_address_1",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_address_2",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "firm_city",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_state",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_zip_code",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_country",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "lp_currency_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "funds_under_management_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "funds_under_management_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "funds_under_management_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "current_pe_allocation_pcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "current_pe_allocation_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "current_pe_allocation_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "current_pe_allocation_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "target_pe_allocation_pcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "target_pe_allocation_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "target_pe_allocation_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "target_pe_allocation_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "separate_acct_committed_pcent",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "separate_acct_committed_lpc",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "separate_acct_committed_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "separate_acct_committed_eur",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "typically_invest_min_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "typically_invest_max_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "typically_invest_min_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "typically_invest_max_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "typically_invest_min_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "typically_invest_max_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "coinvest_with_gp",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "first_close_investor",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "separate_accounts",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "next_12_months_no_investments_mi",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "next_12_months_no_investments_ma",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "next_12_months_amount_min_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "next_12_months_amount_max_lpc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "next12monthsallocationmin_pe_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "next12monthsallocationmax_pe_usd",
+          "type": "double",
+          "nullable": true
+        },
+        {
+          "name": "next12monthsallocationmin_pe_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "next12monthsallocationmax_pe_eur",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "next_12_months_quarter",
+          "type": "null",
+          "nullable": true
+        },
+        {
+          "name": "_source_file",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_source_sha256",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "_loaded_at_utc",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_domain_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_name_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "firm_country_key",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "candidate_primary_keys": [],
+      "candidate_foreign_keys": [
+        "firm_id"
+      ]
+    }
+  ]
+}

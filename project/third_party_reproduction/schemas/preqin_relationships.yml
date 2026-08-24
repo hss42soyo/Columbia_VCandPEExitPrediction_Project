@@ -1,0 +1,63 @@
+component: preqin
+generated_at_utc: 2026-05-21T16:49:30+00:00
+relationships:
+  - table: crunchbase_company_identity
+    candidate_primary_keys: []
+    candidate_foreign_keys: ["company_uuid"]
+  - table: preqin_benchmarks
+    candidate_primary_keys: []
+    candidate_foreign_keys: ["benchmark_id", "composite_benchmark_id"]
+  - table: preqin_buyout_deals
+    candidate_primary_keys: []
+    candidate_foreign_keys: ["portfolio_company_id", "buyout_id"]
+  - table: preqin_cash_flow
+    candidate_primary_keys: ["fund_id"]
+    candidate_foreign_keys: ["fund_id", "firm_id"]
+  - table: preqin_fund_details
+    candidate_primary_keys: ["fund_id"]
+    candidate_foreign_keys: ["firm_id", "fund_id"]
+  - table: preqin_fund_performance
+    candidate_primary_keys: ["fund_id"]
+    candidate_foreign_keys: ["fund_id", "benchmark_id"]
+  - table: preqin_fund_terms
+    candidate_primary_keys: ["fund_id"]
+    candidate_foreign_keys: ["fund_id"]
+  - table: preqin_lp_investor_details
+    candidate_primary_keys: []
+    candidate_foreign_keys: ["firm_id"]
+  - table: preqin_manager_details
+    candidate_primary_keys: []
+    candidate_foreign_keys: ["firm_id"]
+  - table: preqin_portfolio_company_dim
+    candidate_primary_keys: []
+    candidate_foreign_keys: []
+  - table: preqin_standardized_portfolio_deals
+    candidate_primary_keys: []
+    candidate_foreign_keys: ["preqin_portfolio_company_id", "preqin_deal_id"]
+  - table: preqin_vc_deals
+    candidate_primary_keys: []
+    candidate_foreign_keys: ["portfolio_company_id"]
+  - table: preqin_cashflow_fund_link
+    candidate_primary_keys: ["fund_id"]
+    candidate_foreign_keys: ["fund_id", "firm_id"]
+  - table: preqin_crunchbase_company_crosswalk
+    candidate_primary_keys: []
+    candidate_foreign_keys: ["company_uuid", "match_candidate_id", "accepted_match_id"]
+  - table: preqin_crunchbase_match_audit
+    candidate_primary_keys: []
+    candidate_foreign_keys: ["company_uuid", "match_candidate_id", "accepted_match_id"]
+  - table: preqin_crunchbase_match_candidates
+    candidate_primary_keys: []
+    candidate_foreign_keys: ["company_uuid", "match_candidate_id"]
+  - table: preqin_fund_manager_link
+    candidate_primary_keys: ["fund_id"]
+    candidate_foreign_keys: ["firm_id", "fund_id"]
+  - table: preqin_fund_performance_benchmark_link
+    candidate_primary_keys: ["fund_id"]
+    candidate_foreign_keys: ["fund_id", "benchmark_id"]
+  - table: preqin_fund_terms_link
+    candidate_primary_keys: ["fund_id"]
+    candidate_foreign_keys: ["fund_id", "firm_id"]
+  - table: preqin_lp_investor_dim
+    candidate_primary_keys: []
+    candidate_foreign_keys: ["firm_id"]

@@ -1,0 +1,10 @@
+split,company_exit_route,rows,companies
+test,ipo,4934,1713
+test,mna,73501,26643
+test,sponsor_sale,4598,1622
+train,ipo,95032,14629
+train,mna,422310,63131
+train,sponsor_sale,44242,6991
+validation,ipo,21216,4268
+validation,mna,228716,42164
+validation,sponsor_sale,18692,3611

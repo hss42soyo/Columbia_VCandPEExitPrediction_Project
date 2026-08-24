@@ -1,0 +1,51 @@
+---
+title: "Leakage-Controlled Prediction in Private Markets"
+format: html
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+## Purpose
+
+This is the R companion wrapper for the canonical Python Chapter 9 public
+implementation. `sample` is the default public mode. `live` rerenders the
+chapter-facing figures from proprietary local inputs outside `repo/`.
+
+```{r}
+data_mode <- "sample"    # "sample" or "live"
+live_data_dir <- ""      # optional override for live mode
+```
+
+```{r}
+library(glue)
+
+this_dir <- normalizePath(getwd(), winslash = "/", mustWork = TRUE)
+chapter_root <- normalizePath(file.path(this_dir, ".."), winslash = "/", mustWork = TRUE)
+python_dir <- normalizePath(file.path(chapter_root, "python"), winslash = "/", mustWork = TRUE)
+runner_path <- normalizePath(file.path(python_dir, "run_vc_pe_exit_prediction.py"), winslash = "/", mustWork = TRUE)
+output_dir <- normalizePath(
+  file.path(this_dir, if (data_mode == "sample") "rendered-sample" else "rendered-live"),
+  winslash = "/",
+  mustWork = FALSE
+)
+dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
+
+args <- c(
+  shQuote(runner_path),
+  "--data-mode", data_mode,
+  "--outdir", shQuote(output_dir)
+)
+if (nzchar(live_data_dir)) {
+  args <- c(args, "--live-data-dir", shQuote(live_data_dir))
+}
+command <- glue("python {paste(args, collapse = ' ')}")
+status <- system(command)
+if (!identical(status, 0L)) {
+  stop(glue("Chapter 9 Python companion run failed with exit code {status}."))
+}
+cat(glue("Chapter 9 figure package written to: {output_dir}\n"))
+```
+
+The code directory retains the original `VC & PE Exit Prediction` folder name for backward compatibility with existing repository paths; the manuscript title is now `Leakage-Controlled Prediction in Private Markets`.
